@@ -43,7 +43,7 @@
         setStatus("Sending…", true);
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/pashok77010@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/ae6775d4f2906c58be8596d3fe429d89", {
                 method: "POST",
                 headers: { "Accept": "application/json" },
                 body: data
