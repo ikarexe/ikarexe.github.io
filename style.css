@@ -95,3 +95,74 @@ a:link, a:visited {
 a:hover {
   color: var(--highlightcolor);
 }
+
+/* Project cards */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8em;
+    margin-top: 0.8em;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    border: 1px solid var(--prebackgroundcolor);
+    border-radius: 12px;
+    padding: 1em;
+    transition: border-color 0.15s ease;
+}
+
+.project-card:hover {
+    border-color: var(--highlightcolor);
+}
+
+.project-icon {
+    font-size: 1.6em;
+    line-height: 1;
+}
+
+a.project-title:link, a.project-title:visited {
+    color: var(--textcolor);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.project-title:hover {
+    color: var(--highlightcolor);
+}
+
+.project-desc {
+    font-size: 85%;
+    color: var(--subduedcolor);
+    flex-grow: 1;
+}
+
+.store-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    margin-top: 0.4em;
+}
+
+.store-links a:link, .store-links a:visited {
+    font-size: 80%;
+    text-decoration: none;
+    background: var(--prebackgroundcolor);
+    border-radius: 999px;
+    padding: 0.1em 0.8em;
+    white-space: nowrap;
+}
+
+.store-links a:hover {
+    color: var(--highlightcolor);
+}
+
+.project-page-icon {
+    font-size: 3em;
+    text-align: center;
+    line-height: 1;
+    margin-block: 0.3em;
+}
