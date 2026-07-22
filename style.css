@@ -217,6 +217,101 @@ a.project-title:hover {
     color: var(--highlightcolor);
 }
 
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    border: 1px solid var(--prebackgroundcolor);
+    border-radius: 12px;
+    padding: 1em;
+    margin-top: 0.8em;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    font-size: 85%;
+    color: var(--subduedcolor);
+}
+
+.contact-form input,
+.contact-form textarea {
+    font: inherit;
+    font-size: 100%;
+    color: var(--textcolor);
+    background: var(--backgroundcolor);
+    border: 1px solid var(--prebackgroundcolor);
+    border-radius: 8px;
+    padding: 0.4em 0.6em;
+    transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--highlightcolor);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Honeypot: visually removed, but still fillable by naive bots */
+.contact-form .contact-honey {
+    position: absolute;
+    left: -9999px;
+}
+
+.contact-form-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.contact-form button {
+    font: inherit;
+    font-size: 85%;
+    color: var(--textcolor);
+    background: var(--prebackgroundcolor);
+    border: none;
+    border-radius: 999px;
+    padding: 0.3em 1.4em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.contact-form button:hover {
+    color: var(--highlightcolor);
+}
+
+.contact-form button:disabled {
+    color: var(--highlightcolor);
+    cursor: default;
+}
+
+#contact-status {
+    font-size: 85%;
+}
+
+#contact-status.status-ok {
+    color: var(--subduedcolor);
+}
+
+#contact-status.status-error {
+    color: #d05050;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        transition: none;
+    }
+}
+
 .project-page-icon {
     text-align: center;
     line-height: 0;
