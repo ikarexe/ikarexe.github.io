@@ -1,0 +1,22 @@
+# ikar
+
+> Pavel Manzhos ("ikar") is an indie Unity Technical Designer who builds and ships mobile games and apps for iOS, Android and the web under a one-man studio.
+
+This site (https://ikarexe.github.io/) is the developer portfolio and support hub for all projects listed below. Each project page has a short factual description and links to its store listing.
+
+## Projects
+
+- [2D Battle Simulator: Tabs](https://ikarexe.github.io/2d-battle-simulator.html): Sandbox 2D battle simulator with a 100-level campaign, Zombie Mode and free-form Sandbox mode. iOS and Android, 100K+ downloads.
+- [Rock Paper Scissors Simulator](https://ikarexe.github.io/rock-paper-scissors.html): Spectator simulation — set how many rocks, papers and scissors enter the arena and watch the battle play out. iOS and Android.
+- [Yogaratova — Yoga Calendar](https://ikarexe.github.io/yogaratova.html): Calendar app for scheduling yoga practice, building a sadhana routine, and tracking progress by day, week and month. iOS and Android.
+- [Star Crawl Creator](https://ikarexe.github.io/star-crawl-creator.html): Generates a Star Wars-style scrolling "opening crawl" text intro from user-entered text. Android.
+- [Clippy Clicker](https://ikarexe.github.io/clippy-clicker.html): Browser clicker game built around the Windows XP paperclip assistant — click to earn, collect bonuses, unlock levels. Free on Yandex Games.
+- [APR & APY Calculator](https://ikarexe.github.io/apr-apy-calculator.html): Converts between APR and APY and compares interest rates across compounding periods. Android.
+- [Tickby](https://ikarexe.github.io/tickby.html): Offline-first personal finance tracker with custom categories, multi-currency support, and optional end-to-end encrypted sync. No ads. Android. Official site: https://tickby.app/
+- [2D Battle Online](https://ikarexe.github.io/2dbattle-online.html): Multiplayer browser strategy inspired by Direct Strike (StarCraft II) — buy units and upgrades, armies fight automatically. 1v1/2v2/3v3. In development at https://2dbattle.online/
+
+## Other
+
+- [App Privacy Policy](https://ikarexe.github.io/app-privacy-policy.html): Shared privacy policy covering the apps above.
+- [Developer accounts](https://ikarexe.github.io/index.html#accounts): Links to the App Store, Google Play and Yandex Games developer pages.
+- Contact: polygongameapp@gmail.com, or via the contact form on the homepage.

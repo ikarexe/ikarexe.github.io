@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ikarexe.github.io/sitemap.xml
