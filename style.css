@@ -138,7 +138,9 @@ a:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .project-card, .project-icon {
+    .project-card, .project-icon,
+    .store-links a, .store-links a::after,
+    .breadcrumbs a {
         transition: none;
     }
 
@@ -166,21 +168,69 @@ a.project-title:hover {
 .store-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4em;
+    gap: 0.5em;
     margin-top: 0.4em;
 }
 
 .store-links a:link, .store-links a:visited {
-    font-size: 80%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 85%;
     text-decoration: none;
-    background: var(--prebackgroundcolor);
+    color: var(--textcolor);
+    border: 1px solid var(--prebackgroundcolor);
     border-radius: 999px;
-    padding: 0.1em 0.8em;
+    padding: 0.3em 1em;
     white-space: nowrap;
+    transition: border-color 0.2s ease;
+}
+
+.store-links a::after {
+    content: "\2197";
+    display: inline-block;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateX(-4px);
+    transition: width 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
 }
 
 .store-links a:hover {
+    color: var(--textcolor);
+    border-color: var(--highlightcolor);
+}
+
+.store-links a:hover::after {
+    width: 1em;
+    opacity: 1;
+    transform: none;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 85%;
+    margin-top: 0.5em;
     color: var(--highlightcolor);
+}
+
+.breadcrumbs a:link, .breadcrumbs a:visited {
+    color: var(--subduedcolor);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--highlightcolor);
+}
+
+.breadcrumbs .crumb-current {
+    color: var(--textcolor);
+    font-weight: 600;
 }
 
 /* Contact form */
