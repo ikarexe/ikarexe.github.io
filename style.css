@@ -114,19 +114,18 @@ a:hover {
     border: 1px solid var(--prebackgroundcolor);
     border-radius: 12px;
     padding: 1em;
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .project-card:hover {
     border-color: var(--highlightcolor);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px var(--shadowcolor);
+    transform: scale(1.03);
 }
 
 .project-icon {
     line-height: 0;
     color: var(--subduedcolor);
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
 .project-icon svg {
@@ -135,25 +134,7 @@ a:hover {
 }
 
 .project-card:hover .project-icon {
-    transform: scale(1.12) rotate(-4deg);
     color: var(--textcolor);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .project-card {
-        animation: card-in 0.45s ease-out backwards;
-    }
-
-    .project-card:nth-child(2) { animation-delay: 0.05s; }
-    .project-card:nth-child(3) { animation-delay: 0.1s; }
-    .project-card:nth-child(4) { animation-delay: 0.15s; }
-    .project-card:nth-child(5) { animation-delay: 0.2s; }
-    .project-card:nth-child(6) { animation-delay: 0.25s; }
-    .project-card:nth-child(7) { animation-delay: 0.3s; }
-
-    .project-page-icon {
-        animation: card-in 0.45s ease-out backwards;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -162,21 +143,6 @@ a:hover {
     }
 
     .project-card:hover {
-        transform: none;
-    }
-
-    .project-card:hover .project-icon {
-        transform: none;
-    }
-}
-
-@keyframes card-in {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
         transform: none;
     }
 }
